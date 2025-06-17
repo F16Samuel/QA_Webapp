@@ -4,3 +4,4 @@ fastapi
 pymongo
 google.generativeai
 uvicorn
+python-dotenv
