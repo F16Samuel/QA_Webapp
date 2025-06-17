@@ -1,0 +1,5 @@
+node_modules/
+package-lock.json
+infra/backend.Dockerfile
+infra/frontend.Dockerfile
+infra/mongo-init.js

@@ -1,0 +1,33 @@
+# === Core Framework ===
+# FastAPI for building high-performance web APIs
+fastapi==0.111.0
+
+# ASGI server compatible with FastAPI; standard extras include essential dependencies like 'uvloop'
+uvicorn[standard]==0.30.1
+
+# === Database ===
+# Async MongoDB client for non-blocking access
+motor==3.4.0
+
+# PyMongo is a core dependency of Motor; version is pinned for reproducibility
+pymongo==4.7.2
+
+# === Utilities ===
+# For loading environment variables from .env files
+python-dotenv==1.0.1
+
+# === LLM Integration ===
+# SDK for Google's Gemini models (used for generative AI tasks)
+google-generativeai==0.5.2
+
+# === Data Validation ===
+# Explicitly pin Pydantic v2 for compatibility with FastAPI
+pydantic==2.7.1
+
+# === Optional Typing Support ===
+# Not required in Python 3.12+, but retained here for compatibility with dependencies using older typing APIs
+# Remove if all packages support Python 3.12+ natively
+typing-extensions==4.12.0
+
+# === Installation Note ===
+# Install with: pip install --no-cache-dir -r requirements.txt
