@@ -251,7 +251,7 @@ const Index = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                  AI Assistant
+                  EnviroMind - The Ultimate Environmental AI Chatbot
                 </h1>
                 <p className="text-gray-600 text-sm">Exploring AI's impact on environmental research</p>
               </div>
