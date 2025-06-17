@@ -28,7 +28,7 @@ const ChatInput = ({ onSendMessage, disabled }) => {
 
   const handleInputChange = (e) => {
     setQuestion(e.target.value);
-    if (error) setError(''); // Clear error when user starts typing
+    if (error) setError('');
   };
 
   return (
@@ -60,7 +60,6 @@ const ChatInput = ({ onSendMessage, disabled }) => {
             } placeholder-gray-500`}
           />
           
-          {/* Focus indicator */}
           <div className={`absolute inset-0 rounded-xl pointer-events-none transition-opacity duration-200 ${
             isFocused ? 'opacity-100' : 'opacity-0'
           } bg-gradient-to-r from-emerald-400/20 to-teal-400/20`} />

@@ -21,7 +21,9 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 # Initialize chat history (Gemini handles context in chat sessions)
 chat = model.start_chat(history=[])
 
-# Optional system prompt can be passed as a message to the chat
+# Custom System Prompt
+# This prompt sets the context for the AI assistant, guiding its responses.
+# It can be modified to change the assistant's behavior or focus.
 system_prompt = {
     "role": "user",
     "parts": ["You are a helpful assistant with good conversational skills."]

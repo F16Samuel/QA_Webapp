@@ -21,7 +21,7 @@ def serialize_chat_record(record: dict) -> dict:
 async def create_chat(request: ChatRequest):
     # Create a new chat interaction
     try:
-        # Validate input - Pydantic will handle empty string validation
+        # Validate input
         if not request.question.strip():
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
