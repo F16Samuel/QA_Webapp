@@ -1,6 +1,6 @@
 # Pope AI – Predict, Optimize, Perform, Excel.
 
-A full-stack LLM-powered Q&A chat application built with React, FastAPI, MongoDB, and Docker, deployed via GitHub Actions to AWS.
+A full-stack LLM-powered Q&A chat application built with React, FastAPI, MongoDB, and Docker.
 
 ---
 
@@ -9,7 +9,6 @@ A full-stack LLM-powered Q&A chat application built with React, FastAPI, MongoDB
 - Ask any question via chat UI
 - Stubbed backend responses (LLM-ready)
 - Persistent history using MongoDB
-- CI/CD pipeline for deployment to AWS
 
 ---
 
@@ -39,25 +38,8 @@ cp infra/.env.example .env
 docker compose -f infra/docker-compose.yml up --build
 ```
 
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:8080
 - Backend API: http://localhost:8000/api/chat
-
----
-
-## ☁️ Deployment (via GitHub Actions)
-
-1. Push to `main` branch.
-2. Ensure the following GitHub Secrets are set:
-   - `DOCKER_USERNAME`
-   - `DOCKER_PASSWORD`
-   - `EC2_HOST`
-   - `EC2_USER`
-   - `EC2_SSH_KEY` (private SSH key)
-
-On push, the pipeline:
-- Builds frontend & backend images
-- Pushes them to Docker Hub
-- SSHes into EC2 and redeploys using `docker-compose`
 
 ---
 
@@ -82,9 +64,7 @@ _See reference image (design.png)_
 
 - **Frontend**: React (Vite), CSS
 - **Backend**: FastAPI, Pydantic
-- **DB**: MongoDB (via Docker)
-- **CI/CD**: GitHub Actions
-- **Cloud**: AWS EC2
+- **DB**: MongoDB
 
 ---
 
